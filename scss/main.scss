@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@import "vars";
+@import "bgLogo";
+@import "header";
+@import "cont-index";
+@import "bot-bar";
+@import "mqueries";
+
+.contenedor{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto auto 100px auto;
+    display: grid;
+    grid-gap: 15px;
+    width: 100%;
+}

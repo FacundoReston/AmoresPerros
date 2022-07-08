@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.contenedor {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  display: grid;
+  grid-gap: 15px;
+  width: 100%;
+}
+
+body {
+  background-image: url(../img/plantillapuntitos.jpg);
+}
+
+.logo {
+  grid-column: 2/3;
+}
+
+.header {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: pink;
+  background: rgb(255, 192, 203);
+  background: radial-gradient(circle, rgb(255, 192, 203) 0%, rgb(173, 173, 173) 35%);
+}
+.header .btn {
+  text-decoration: none;
+  font-weight: lighter;
+  color: white;
+  font-size: x-large;
+}
+.header .btn:hover {
+  color: rgb(255, 93, 120);
+}
+
+.titulo {
+  grid-row: 3/4;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.texto {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  text-align: center;
+  font-style: italic;
+}
+.texto p {
+  background: radial-gradient(pink, #adadad);
+  border: solid 1px black;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.gif {
+  grid-row: 5/6;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.gif iframe {
+  width: 372px;
+  height: 332px;
+  transform: rotate(358deg);
+}
+
+.subtitulo {
+  grid-row: 5/6;
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px;
+  font-size: x-large;
+}
+.subtitulo h4 {
+  padding: 10px;
+}
+
+.lista {
+  grid-row: 5/6;
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  text-align: justify;
+}
+.lista ul {
+  list-style: none;
+}
+
+.bot-bar {
+  grid-row: 6/7;
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(5px);
+}
+.bot-bar ul {
+  padding-left: 0;
+}
+.bot-bar ul li {
+  display: inline;
+}
+.bot-bar ul li a {
+  text-decoration: none;
+  color: rgb(0, 54, 102);
+  font-weight: bold;
+  padding: 10px;
+}
+.bot-bar ul li a:hover {
+  color: rgb(255, 93, 120);
+}
+
+.ayuda {
+  grid-row: 6/7;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ayuda button {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: rgb(0, 54, 102);
+}
+.ayuda button a {
+  text-decoration: none;
+  color: white;
+}
+.ayuda button a:hover {
+  color: rgb(255, 93, 120);
+}
+
+.redesSociales {
+  grid-row: 6/7;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redesSociales a {
+  padding: 10px;
+}
+.redesSociales a:hover {
+  background-color: rgb(255, 93, 120);
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    grid-template-rows: 1/2;
+    grid-template-columns: 2/3;
+  }
+
+  .header {
+    grid-template-rows: 2/3;
+    grid-template-columns: 1/4;
+  }
+
+  .titulo {
+    grid-template-rows: 3/4;
+    grid-template-columns: 2/3;
+  }
+
+  .texto {
+    grid-template-rows: 4/5;
+    grid-template-columns: 2/3;
+  }
+
+  .gif {
+    grid-template-rows: 5/6;
+    grid-template-columns: 2/3;
+  }
+
+  .subtitulo {
+    grid-template-rows: 6/7;
+    grid-template-columns: 2/3;
+  }
+
+  .lista {
+    grid-template-rows: 7/8;
+    grid-template-columns: 2/3;
+  }
+
+  .bot-bar {
+    grid-template-rows: 8/9;
+    grid-template-columns: 1/2;
+  }
+
+  .ayuda {
+    grid-template-rows: 8/9;
+    grid-template-columns: 2/3;
+  }
+
+  .redesSociales {
+    grid-template-rows: 8/9;
+    grid-template-columns: 3/4;
+  }
+}/*# sourceMappingURL=servicios.css.map */

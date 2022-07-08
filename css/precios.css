@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-image: url(../img/plantillapuntitos.jpg);
+}
+
+.contenedor{
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    background: linear-gradient(0.25turn, #adadad, pink, #adadad);
+    margin-top: 30px;
+}
+
+.header header nav ul{
+    padding-left: 0;
+}
+
+.header header nav ul li{
+    display: inline;
+    padding: 40px;
+}
+
+.header header nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 54, 102);
+    font-size: x-large;
+}
+
+.header header nav ul li a:hover{
+    color: rgb(255, 93, 120);
+}
+
+.titulo{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.titulo h1{
+    background: radial-gradient(pink, #adadad);
+    padding: 20px;
+    border: 3px solid rgb(255, 93, 120); 
+}
+
+.subtituloTexto{
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: xx-large;
+    color: rgb(255, 93, 120);
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-name: subtitulo;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes subtitulo{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+.texto{
+    font-size: larger;
+}
+
+.iframe{
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    border: none;
+    outline: 3px solid rgb(255, 93, 120);
+    outline-offset: 3px;
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(2deg);
+}
+
+.tituloLista{
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.lista{
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    margin-bottom: 30px;
+}
+
+.lista ul{
+    list-style:square;
+}
+
+.bot-menu{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.bot-menu ul{
+    padding-left: 0;
+}
+
+.bot-menu ul li{
+    display: inline;
+}
+
+.bot-menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 54, 102);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.bot-menu ul li a:hover{
+    color: rgb(255, 93, 120);
+}
+
+.ayuda{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.ayuda button{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: rgb(0, 54, 102);
+}
+
+.ayuda button a{
+    text-decoration: none;
+    color: white;
+}
+
+.ayuda button a:hover{
+    color: rgb(255, 93, 120);
+}
+
+.redesSociales{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.redesSociales a{
+    padding: 10px;
+}
+
+.redesSociales a:hover{
+    background-color: rgb(255, 93, 120);
+}
+
+@media screen and (max-width: 768px) {
+    
+    .contenedor{
+        width: 100%;
+    }
+    .logo{
+        grid-row: 1 / 2;
+    }
+    .header{
+        grid-row: 2 / 3;
+    }
+    .titulo{
+        grid-row: 3 / 4;
+    }
+    .subtituloTexto{
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
+    }
+    .iframe{
+        grid-row: 5 / 6;
+        grid-column: 2 / 3;
+    }
+    .tituloLista{
+        grid-row: 6 / 7;
+        grid-column: 2 / 3;
+    }
+    .lista{
+        grid-row: 7 / 8;
+        grid-column: 2 / 3;
+    }
+    .bot-menu{
+        grid-row: 8 / 9;
+        grid-column: 1 / 3;
+
+    }
+    .ayuda{
+        grid-row: 8 / 9;
+        grid-column: 3 / 4;
+        justify-content: left;
+        align-items: left;
+        transform: translateX(-20px);
+    }
+    .redesSociales{
+        grid-row: 9 / 10;
+        grid-column: 1 / 4;
+    }
+    .redesSociales a{
+        padding: 30px;
+    }
+}

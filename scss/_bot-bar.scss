@@ -1,0 +1,76 @@
+.bot-menu{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: grid;
+    align-items: flex-end;
+    justify-content: center;
+    align-items:flex-end;
+    ul{
+        padding-left: 0;
+
+        li{
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+                color: $linkBlue;
+                font-weight: bold;
+                padding: 10px;
+
+                &:hover{
+                    color: $darkPink
+                }
+            }
+        }
+    }
+}
+.ayuda{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    align-items: flex-end;
+    justify-content: center;
+    button{
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        background-color: $linkBlue;
+
+        a{
+            text-decoration: none;
+            color: white;
+            text-align: center;
+
+            &:hover{
+                color: $darkPink
+            }
+        }
+    }
+}
+.redesSociales{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    transform: translateY(10px);
+    .row{
+        .col{
+            a{
+                display: inline-flex;
+            }
+        }
+    }
+
+    a{
+        padding: 10px;
+
+        &:hover{
+            background-color: $darkPink;
+        }
+    }
+}
