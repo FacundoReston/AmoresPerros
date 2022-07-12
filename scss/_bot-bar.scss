@@ -4,21 +4,21 @@
     display: grid;
     align-items: flex-end;
     justify-content: center;
-    align-items:flex-end;
+
     ul{
         padding-left: 0;
 
         li{
-            display: inline-block;
+            display: inline;
 
             a{
                 text-decoration: none;
-                color: $linkBlue;
+                color: $link;
                 font-weight: bold;
                 padding: 10px;
 
                 &:hover{
-                    color: $darkPink
+                    color: $secondary;
                 }
             }
         }
@@ -32,19 +32,20 @@
     display: grid;
     align-items: flex-end;
     justify-content: center;
+
     button{
         height: 32px;
         width: 32px;
         border-radius: 50%;
-        background-color: $linkBlue;
+        background-color: $link;
 
         a{
             text-decoration: none;
-            color: white;
+            color: $white;
             text-align: center;
 
             &:hover{
-                color: $darkPink
+                color: $secondary;
             }
         }
     }
@@ -58,10 +59,13 @@
     justify-content: center;
     align-items: flex-end;
     transform: translateY(10px);
+
     .row{
+
         .col{
+            
             a{
-                display: inline-flex;
+                display: inline;
             }
         }
     }
@@ -70,7 +74,7 @@
         padding: 10px;
 
         &:hover{
-            background-color: $darkPink;
+            background-color: $secondary;
         }
     }
 }

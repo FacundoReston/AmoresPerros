@@ -1,9 +1,4 @@
 .bot-bar{
-    grid-row: 6 / 7;
-    grid-column: 1 / 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: translateY(5px);
     ul{
         padding-left: 0;
@@ -11,46 +6,38 @@
             display: inline;
             a{
                 text-decoration: none;
-                color: $linkBlue;
+                color: $link;
                 font-weight: bold;
                 padding: 10px;
                 &:hover{
-                    color: $darkPink;
+                    color: $secondary;
                 }
             }
         }
     }
 }
 .ayuda{
-    grid-row: 6 / 7;
-    grid-column: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     button{
         height: 32px;
         width: 32px;
         border-radius: 50%;
-        background-color: $linkBlue;
+        background-color: $link;
         a{
             text-decoration: none;
-            color: white;
+            color: $white;
             &:hover{
-                color: $darkPink;
+                color: $secondary;
             }
         }
     }
 }
 .redesSociales{
-    grid-row: 6 / 7;
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     a{
         padding: 10px;
         &:hover{
-            background-color: $darkPink;
+            background-color: $secondary;
         }
     }
 }

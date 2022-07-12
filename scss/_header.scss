@@ -1,23 +1,21 @@
 
 .header {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    display: flex;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
     text-align: center;
     margin-top: 30px;
     padding: 20px;
-    background-color: pink;
-    background: rgb(255,192,203);
-    background: radial-gradient(circle, rgba(255,192,203,1) 0%, rgba(173,173,173,1) 35%);
+    background: $primary;
+    background: radial-gradient(circle, $primary 0%, $grey 35%);
 
     .btn {
         text-decoration: none;
         font-weight: lighter;
-        color: white;
+        color: $white;
         font-size: x-large;
         &:hover{
-            color: $darkPink
+            color: $secondary;
         }
     }
 }

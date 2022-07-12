@@ -1,3 +1,21 @@
 
-$darkPink: rgb(255, 93, 120);
-$linkBlue: rgb(0, 54, 102);
+$primary: pink;
+$secondary: #ff5d78;
+$link: #003666;
+$grey: #adadad;
+$darkgrey: #333333;
+$black: #000000;
+$white: #ffffff;
+$red: #790014;
+
+$colores: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'link': $link,
+    'grey': $grey,
+    'darkgrey': $darkgrey,
+    'black': $black,
+    'white': $white,
+    'red': $red,
+)
+

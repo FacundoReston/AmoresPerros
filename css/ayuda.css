@@ -12,7 +12,7 @@ body{
     width: 100%;
     display: grid;
     grid-gap: 15px;
-    grid-template-rows: auto auto auto auto auto 0px;
+    grid-template-rows: auto auto auto auto 70px auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -108,8 +108,8 @@ body{
 }
 
 .bot-menu{
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 3;
     display: flex;
@@ -139,8 +139,8 @@ body{
 }
 
 .ayuda{
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
     grid-column-start: 3;
     grid-column-end: 4;
     display: flex;
@@ -167,8 +167,8 @@ body{
 }
 
 .redesSociales{
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
     grid-column-start: 4;
     grid-column-end: 6;
     display: flex;
