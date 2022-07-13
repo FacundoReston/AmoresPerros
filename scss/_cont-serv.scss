@@ -4,8 +4,8 @@
 .texto{
     font-style: italic;
     p{
-        background: radial-gradient($primary, $grey);
-        border: solid 1px $black;
+        background: radial-gradient(map-get($map: $colores, $key: 'primary'), map-get($map: $colores, $key: 'grey'));
+        border: solid 1px map-get($map: $colores, $key: 'black');
         border-radius: 5%;
         padding: 10px;
     }

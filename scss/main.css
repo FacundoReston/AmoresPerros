@@ -29,8 +29,8 @@ body {
   text-align: center;
   margin-top: 30px;
   padding: 20px;
-  background: pink;
-  background: radial-gradient(circle, pink 0%, #adadad 35%);
+  background: #ffc0cb;
+  background: radial-gradient(circle, #ffc0cb 0%, #adadad 35%);
 }
 .header .btn {
   text-decoration: none;
@@ -43,18 +43,16 @@ body {
 }
 
 .turnos {
-  grid-row-start: 3;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-row: 3/4;
+  grid-column: 2/3;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 100px;
 }
 .turnos .pediTurno h2 {
   color: #333333;
-  background: pink;
-  background: linear-gradient(0deg, pink 0%, #adadad 100%);
+  background: #ffc0cb;
+  background: linear-gradient(0deg, #ffc0cb 0%, #adadad 100%);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -69,33 +67,28 @@ body {
 .turnos .clickAqui {
   margin-top: 70px;
 }
-.turnos .clickAqui .btn {
-  height: 100px;
-  width: 100px;
-  background: pink;
+.turnos .clickAqui .btn--turnos {
   border-radius: 50%;
   border: none;
-  outline: 3px dashed #ff5d78;
-  outline-offset: 3px;
-}
-.turnos .clickAqui .btn a {
-  text-decoration: none;
-  color: #003666;
   font-weight: bold;
+  background: #ffc0cb;
+  outline: 3px solid #ff5d78;
+  outline-offset: 3px;
+  height: 100px;
+  width: 100px;
+}
+.turnos .clickAqui .btn--turnos a {
+  text-decoration: none;
   font-size: larger;
 }
-.turnos .clickAqui .btn a:hover {
+.turnos .clickAqui .btn--turnos a:hover {
   color: #ff5d78;
 }
 
-.perrita {
+.animation, .ruben, .perrita {
   grid-row-start: 4;
   grid-row-end: 5;
-  grid-column-start: 3;
-  grid-column-end: 4;
   text-align: center;
-  -webkit-animation-name: perrita;
-          animation-name: perrita;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-delay: 0s;
@@ -104,10 +97,17 @@ body {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  height: 340px;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.perrita {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  -webkit-animation-name: perrita;
+          animation-name: perrita;
+  height: 340px;
 }
 .perrita img {
   outline: 5px dotted #ff5d78;
@@ -156,7 +156,7 @@ body {
   grid-column-end: 3;
   text-align: center;
   margin-top: 40px;
-  background: linear-gradient(pink, #adadad);
+  background: linear-gradient(#ffc0cb, #adadad);
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -175,25 +175,11 @@ body {
 }
 
 .ruben {
-  grid-row-start: 4;
-  grid-row-end: 5;
+  height: 355px;
   grid-column-start: 1;
   grid-column-end: 2;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  height: 355px;
-  width: 300px;
   -webkit-animation-name: ruben;
           animation-name: ruben;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
 }
 .ruben img {
   outline: 5px dotted #ff5d78;
@@ -236,11 +222,11 @@ body {
   }
 }
 .bot-menu {
+  display: grid;
   grid-row-start: 5;
   grid-row-end: 6;
-  display: grid;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
 }
 .bot-menu ul {
   padding-left: 0;
@@ -259,36 +245,35 @@ body {
 }
 
 .ayuda {
+  display: grid;
   grid-row-start: 5;
   grid-row-end: 6;
+  justify-content: center;
   grid-column-start: 2;
   grid-column-end: 3;
-  display: grid;
   align-items: flex-end;
-  justify-content: center;
 }
-.ayuda button {
+.ayuda .btn--footer {
   height: 32px;
   width: 32px;
   border-radius: 50%;
   background-color: #003666;
 }
-.ayuda button a {
+.ayuda .btn--footer a {
   text-decoration: none;
   color: #ffffff;
-  text-align: center;
 }
-.ayuda button a:hover {
+.ayuda .btn--footer a:hover {
   color: #ff5d78;
 }
 
 .redesSociales {
+  display: grid;
   grid-row-start: 5;
   grid-row-end: 6;
+  justify-content: center;
   grid-column-start: 3;
   grid-column-end: 4;
-  display: grid;
-  justify-content: center;
   align-items: flex-end;
   transform: translateY(10px);
 }

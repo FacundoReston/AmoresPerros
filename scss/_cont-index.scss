@@ -1,66 +1,77 @@
+
 .turnos {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row: 3/4;
+    grid-column: 2/3;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 100px;
+
     .pediTurno{
         h2 {
-            color: $darkgrey;
-            background: $primary;
-            background: linear-gradient(0deg, $primary 0%, $grey 100%);
+            color: map-get($map: $colores, $key: 'darkgrey');
+            background: map-get($map: $colores, $key: 'primary');
+            background: linear-gradient(0deg, map-get($map: $colores, $key: 'primary') 0%, map-get($map: $colores, $key: 'grey') 100%);
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
             padding: 10px;
             border-radius: 5%;
-            outline: 3px solid $secondary;
+            outline: 3px solid map-get($map: $colores, $key: 'secondary');
             outline-offset: 2px;
             font-size: xx-large;
         }
     }
+
+    @mixin btn {
+        border-radius: 50%;
+        border: none;
+        font-weight: bold;
+        background: map-get($map: $colores, $key: 'primary');
+        outline: 3px solid map-get($map: $colores, $key: 'secondary');
+        outline-offset: 3px;
+    }
+
     .clickAqui{
         margin-top: 70px;
-        .btn{
+
+        .btn--turnos{
+            @include btn;
             height: 100px;
             width: 100px;
-            background: $primary;
-            border-radius: 50%;
-            border: none;
-            outline: 3px dashed $secondary;
-            outline-offset: 3px;
+
             a{
                 text-decoration: none;
-                color: $link;
-                font-weight: bold;
                 font-size: larger;
+
                 &:hover{
-                    color: $secondary;
+                    color: map-get($map: $colores, $key: 'secondary');
                 }
             }
         }
     }
 }
 
-.perrita{
+.animation{
     grid-row-start: 4;
     grid-row-end: 5;
-    grid-column-start: 3;
-    grid-column-end: 4;
     text-align: center;
-    animation-name: perrita;
     animation-duration: 5s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    height: 340px;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+}
+.perrita{
+    @extend .animation;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    animation-name: perrita;
+    height: 340px;
+
     img{
-        outline: 5px dotted $secondary;
+        outline: 5px dotted map-get($map: $colores, $key: 'secondary');
         outline-offset: 3px;
     }
 }
@@ -68,17 +79,17 @@
 @keyframes perrita {
     0%{
         opacity: 0.8;
-        outline: 5px dotted $secondary;
+        outline: 5px dotted map-get($map: $colores, $key: 'secondary');
         outline-offset: 3px;
     }
     50%{
         opacity: 1;
-        outline: 5px dotted $red;
+        outline: 5px dotted map-get($map: $colores, $key: 'red');
         outline-offset: 3px;
     }
     100%{
         opacity: 0.8;
-        outline: 5px dotted $secondary;
+        outline: 5px dotted map-get($map: $colores, $key: 'secondary');
         outline-offset: 3px;
     }
 }
@@ -90,13 +101,13 @@
     grid-column-end: 3;
     text-align: center;
     margin-top: 40px;
-    background: linear-gradient($primary, $grey);
+    background: linear-gradient(map-get($map: $colores, $key: 'primary'), map-get($map: $colores, $key: 'grey'));
     height: min-content;
     width: 300px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 15px 0 15px;
-    color: $darkgrey;
+    color: map-get($map: $colores, $key: 'darkgrey');
     border-radius: 5%;
     h3{
         margin-top: 15px;
@@ -107,40 +118,32 @@
 }
 
 .ruben{
-    grid-row-start: 4;
-    grid-row-end: 5;
+    @extend .animation;
+    height: 355px;
     grid-column-start: 1;
     grid-column-end: 2;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 355px;
-    width: 300px;
     animation-name: ruben;
-    animation-duration: 5s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    img{
-        outline: 5px dotted $secondary;
-        outline-offset: 3px;
+
+    img{ 
+        outline: 5px dotted map-get($map: $colores, $key: 'secondary');
+        outline-offset : 3px;
     }
 }
 
 @keyframes ruben {
     0%{
         opacity: 0.8;
-        outline: 5px dotted $secondary;
+        outline: 5px dotted map-get($map: $colores, $key: 'secondary');
         outline-offset: 3px;
     }
     50%{
         opacity: 1;
-        outline: 5px dotted $red;
+        outline: 5px dotted map-get($map: $colores, $key: 'red');
         outline-offset: 3px;
     }
     100%{
         opacity: 0.8;
-        outline: 5px dotted $secondary;
+        outline: 5px dotted map-get($map: $colores, $key: 'secondary');
         outline-offset: 3px;
     }
 }
