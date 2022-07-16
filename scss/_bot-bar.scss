@@ -21,6 +21,7 @@
                 color: map-get($map: $colores, $key: 'link');
                 font-weight: bold;
                 padding: 10px;
+                font-size: larger;
 
                 &:hover{
                     color: map-get($map: $colores, $key: 'secondary');

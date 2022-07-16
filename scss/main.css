@@ -239,6 +239,7 @@ body {
   color: #003666;
   font-weight: bold;
   padding: 10px;
+  font-size: larger;
 }
 .bot-menu ul li a:hover {
   color: #ff5d78;
