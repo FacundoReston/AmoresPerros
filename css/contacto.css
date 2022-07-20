@@ -81,7 +81,7 @@ body{
     margin-top: 40px;
 }
 
-.mail p{
+.mail .card-body a{
     margin-top: 80px;
     font-size: large;
 }
@@ -105,7 +105,7 @@ body{
     margin-top: 50px;
 }
 
-.lista-telefonos li{
+.lista-telefonos a{
     padding-top: 20px;
     font-size: large;
 }
@@ -114,7 +114,6 @@ body{
     grid-row: 4 / 5;
     grid-column: 3 / 4;
 }
-
 
 .formulario{
     grid-row: 6 / 7;
