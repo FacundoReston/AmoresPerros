@@ -1,7 +1,10 @@
 @media screen and (max-width: 768px) {
-    
+    .contenedor{
+        display: block;
+    }
     .logo{
         grid-row: 1 / 2;
+        text-align: center;
     }
     .header{
         grid-row: 2 / 3;
@@ -24,11 +27,13 @@
     .perrita{
         grid-row: 6 / 7;
         grid-column: 2 / 3;
-        margin-top: 270px;
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
     .bot-menu{
         grid-row: 7 / 8;
         grid-column: 1 / 3;
+        margin-bottom: 30px;
     }
     .bot-menu li{
         display: inline;
@@ -38,7 +43,6 @@
         grid-column: 3 / 4;
         justify-content: left;
         align-items: left;
-        transform: translateX(-30px);
     }
     .redesSociales{
         grid-row: 8 / 9;
@@ -46,5 +50,10 @@
     }
     .redesSociales a{
         padding: 20px;
+    }
+}
+@media screen and (max-width: 290px) {
+    .redesSociales a{
+        padding: 10px;
     }
 }

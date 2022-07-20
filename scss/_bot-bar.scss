@@ -1,13 +1,10 @@
-@mixin grid {
-    display: grid;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    justify-content: center;
-}
-
 
 .bot-menu{
-    @include grid;
+    display: flex;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    align-items: center;
+    justify-content: center;
     align-items: flex-end;
 
     ul{
@@ -31,8 +28,12 @@
     }
 }
 
+
 .ayuda{
-    @include grid;
+    display: flex;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-content: center;
     grid-column-start: 2;
     grid-column-end: 3;
     align-items: flex-end;
@@ -52,11 +53,13 @@
     }
 }
 .redesSociales{
-    @include grid;
+    display: flex;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    justify-content: center;
     grid-column-start: 3;
     grid-column-end: 4;
     align-items: flex-end;
-    transform: translateY(10px);
 
     .row{
 

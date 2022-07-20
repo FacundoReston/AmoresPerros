@@ -47,6 +47,10 @@ body{
     color: rgb(255, 93, 120);
 }
 
+header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-body.rounded {
+    display: flex;
+}
+
 .titulo{
     grid-row: 3 / 4;
     grid-column: 2 / 3;
@@ -198,6 +202,7 @@ body{
     
     .contenedor{
         width: 100%;
+        display: block;
     }
     .logo{
         grid-row: 1 / 2;
@@ -234,7 +239,6 @@ body{
         grid-column: 3 / 4;
         justify-content: left;
         align-items: left;
-        transform: translateX(-20px);
     }
     .redesSociales{
         grid-row: 9 / 10;
