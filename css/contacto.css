@@ -224,6 +224,7 @@ body{
     }
     .header{
         grid-row: 2 / 3;
+        grid-column: 2 / 5;
     }
     .titulo{
         grid-row: 3 / 4;
@@ -275,3 +276,5 @@ body{
         padding: 30px;
     }
 }
+
+

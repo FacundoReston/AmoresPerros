@@ -18,8 +18,11 @@ body {
   grid-column-end: 3;
 }
 
-.header {
+header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-body.rounded {
   display: flex;
+}
+
+.header {
   grid-row: 2/3;
   grid-column: 1/4;
   text-align: center;
@@ -111,4 +114,10 @@ body {
 }
 .redesSociales a:hover {
   background-color: #ff5d78;
+}
+
+@media screen and (max-width: 361px) {
+  .redesSociales {
+    justify-content: unset;
+  }
 }/*# sourceMappingURL=servicios.css.map */

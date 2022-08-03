@@ -13,7 +13,11 @@
 @import "cont-serv";
 @import "footer-serv";
 
-
+@media screen and (max-width: 361px) {
+    .redesSociales{
+        justify-content: unset;
+    }
+}
 
 
 

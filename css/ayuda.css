@@ -138,7 +138,7 @@ body{
     height: fit-content;
 }
 
-.preguntas{
+.mensaje{
     grid-row: 11 / 12;
     grid-column: 1 / 6;
     display: flex;
@@ -146,12 +146,12 @@ body{
     align-items: center;
 }
 
-.preguntas label{
+.mensaje label{
     font-size: large;
     display: flex;
 }
 
-.preguntas .enviar{
+.mensaje .enviar{
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -159,16 +159,16 @@ body{
     transform: translateX(-80px);
 }
 
-.preguntas .enviar a{
+.mensaje .enviar a{
     text-decoration: none;
     color: white;
 }
 
-.preguntas .enviar a:hover{
+.mensaje .enviar a:hover{
     color: rgb(255, 93, 120);
 }
 
-.preguntas textarea{
+.mensaje textarea{
     transform: translateX(-50px);
 }
 
@@ -290,14 +290,14 @@ body{
     .pregunta6{
         grid-row: 10 / 11
     }
-    .preguntas{
+    .mensaje{
         grid-row: 11 / 12;
         transform: translateX(20px);
     }
-    .preguntas .enviar{
+    .mensaje .enviar{
         transform: translateX(-30px);
     }
-    .preguntas label{
+    .mensaje label{
         transform: translateX(-20px);
         flex-wrap: wrap;
     }
@@ -324,7 +324,7 @@ body{
 }
 
 @media screen and (min-width: 499px) {
-    .preguntas label{
+    .mensaje label{
         width: min-content;
         flex-wrap: wrap;
         flex-direction: column;
@@ -333,7 +333,7 @@ body{
     }
 }
 @media screen and (min-width: 1000px) {
-    .preguntas label{
+    .mensaje label{
         flex-direction: row;
         width:fit-content;
         flex-wrap: nowrap;

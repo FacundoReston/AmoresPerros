@@ -22,8 +22,11 @@ body {
   grid-column-end: 3;
 }
 
-.header {
+header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-body.rounded {
   display: flex;
+}
+
+.header {
   grid-row: 2/3;
   grid-column: 1/4;
   text-align: center;
@@ -340,7 +343,13 @@ body {
     padding: 20px;
   }
 }
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 320px) {
+  header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-body.rounded {
+    flex-wrap: wrap;
+  }
+  header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-body.rounded a {
+    border-radius: 0;
+  }
   .redesSociales a {
     padding: 10px;
   }
