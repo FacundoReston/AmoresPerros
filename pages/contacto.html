@@ -60,14 +60,13 @@
     <div class="formulario">
         <p>Esta es una breve encuesta para ayudarnos a mejorar: según su experiencia con esta peluquería,</p> 
         <label class="bg-secondary text-light h4 p3 border border-4 border-dark rounded p-2" for="atencion">¿Cómo fue nuestra atencion?</label>
-        <form action="">
+        <form action="form.php" method="POST"></form>
             <div><label class="h5"><input type="radio" name="atencion" value="excelente">Excelente</label></div>
             <div><label class="h5"><input type="radio" name="atencion" value="buena">Buena</label></div>
             <div><label class="h5"><input type="radio" name="atencion" value="regular">Regular</label></div>
             <div><label class="h5"><input type="radio" name="atencion" value="mala">Mala</label></div>
             <div><label class="h5"><input type="radio" name="atencion" value="pesima">Pésima</label></div>
-            <input class="enviar" type="button" value="Enviar">
-            <input class="reset" type="reset" value="Restaurar formulario">
+            <button class="enviar" type="submit"><a href="exito.html">Enviar</a></button>
         </form>
     </div>
 

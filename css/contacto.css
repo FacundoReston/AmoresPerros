@@ -138,14 +138,17 @@ body{
     
 }
 
-.enviar,
-.reset{
+.enviar{
     margin-left: 20px;
     margin-top: 10px;
     padding: 5px;
     background-color: pink;
     border: 1px solid;
     border-radius: 5%;
+}
+
+.enviar a{
+    text-decoration: none;
 }
 
 .bot-menu{
