@@ -80,6 +80,7 @@ body{
 .pregunta1{
     grid-row: 5 / 6;
     grid-column: 1 / 6;
+    margin-top: 40px;
     border: 3px solid rgb(255, 93, 120);
     border-radius: 15px;
     padding: 5px;
@@ -89,7 +90,7 @@ body{
 .pregunta2{
     grid-row: 6 / 7;
     grid-column: 1 / 6;
-    margin-top: 20px;
+    margin-top: 40px;
     border: 3px solid rgb(255, 93, 120);
     border-radius: 15px;
     padding: 5px;
@@ -99,7 +100,7 @@ body{
 .pregunta3{
     grid-row: 7 / 8;
     grid-column: 1 / 6;
-    margin-top: 20px;
+    margin-top: 40px;
     border: 3px solid rgb(255, 93, 120);
     border-radius: 15px;
     padding: 5px;
@@ -109,7 +110,7 @@ body{
 .pregunta4{
     grid-row: 8 / 9;
     grid-column: 1 / 6;
-    margin-top: 20px;
+    margin-top: 40px;
     border: 3px solid rgb(255, 93, 120);
     border-radius: 15px;
     padding: 5px;
@@ -119,7 +120,7 @@ body{
 .pregunta5{
     grid-row: 9 / 10;
     grid-column: 1 / 6;
-    margin-top: 20px;
+    margin-top: 40px;
     border: 3px solid rgb(255, 93, 120);
     border-radius: 15px;
     padding: 5px;
@@ -129,7 +130,7 @@ body{
 .pregunta6{
     grid-row: 10 / 11;
     grid-column: 1 / 6;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 30px;
     border: 3px solid rgb(255, 93, 120);
     border-radius: 15px;
@@ -144,6 +145,10 @@ body{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+}
+
+.mensaje textarea{
+    padding: 5px;
 }
 
 .mensaje label{
@@ -186,6 +191,7 @@ body{
 
 .bot-menu ul{
     padding-left: 0;
+    margin-bottom: 10px;
 }
 
 .bot-menu ul li{
@@ -212,7 +218,7 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 50px;
 }
 
@@ -241,6 +247,7 @@ body{
     align-items: flex-end;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .redesSociales a{
@@ -310,7 +317,6 @@ body{
         grid-row: 12 / 13;
         grid-column: 3 / 4;
         justify-content: flex-end;
-        transform: translateY(-12px);
         }
     .redesSociales{
         grid-row: 13 / 14;
@@ -339,6 +345,7 @@ body{
         flex-wrap: nowrap;
     }
 }
+
 
 
 

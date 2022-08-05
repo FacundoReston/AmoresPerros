@@ -121,6 +121,7 @@ header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-b
     margin-right: auto;
     margin-top: 140px;
     margin-bottom: 100px;
+    font-size: large;
 }
 
 .bot-menu{
@@ -209,6 +210,7 @@ header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-b
     }
     .header{
         grid-row: 2 / 3;
+        justify-content: center;
     }
     .titulo{
         grid-row: 3 / 4;
@@ -232,13 +234,14 @@ header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-b
     .bot-menu{
         grid-row: 8 / 9;
         grid-column: 1 / 3;
-
+        justify-content: space-evenly;
     }
     .ayuda{
         grid-row: 8 / 9;
         grid-column: 3 / 4;
         justify-content: left;
         align-items: left;
+        margin-bottom: 13px;
     }
     .redesSociales{
         grid-row: 9 / 10;
