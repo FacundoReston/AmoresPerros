@@ -59,6 +59,7 @@ header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-b
     justify-content: center;
     margin-bottom: 80px;
     margin-top: 30px;
+    text-align: center;
 }
 
 .titulo h1{
@@ -223,9 +224,8 @@ header.header.btn-group.border.border-4.border-secondary.shadow-lg.p-3.mb-5.bg-b
         grid-row: 5 / 6;
         grid-column: 2 / 3;
     }
-    .tituloLista{
-        grid-row: 6 / 7;
-        grid-column: 2 / 3;
+    .card{
+        margin: 80px auto;
     }
     .lista{
         grid-row: 7 / 8;
